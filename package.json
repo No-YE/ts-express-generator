@@ -1,10 +1,14 @@
 {
   "name": "ts-express-generator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/No-YE/ts-express-generator.git"
   },
   "author": "",
   "license": "ISC",
@@ -12,8 +16,5 @@
     "commander": "^2.20.0",
     "hjson": "^3.1.2",
     "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "typescript": "^3.4.5"
   }
 }
