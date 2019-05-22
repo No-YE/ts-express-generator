@@ -1,6 +1,6 @@
 {
   "name": "ts-express-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,9 @@
   },
   "author": "",
   "license": "ISC",
+  "bin": {
+    "teg": "./index.js"
+  },
   "dependencies": {
     "commander": "^2.20.0",
     "hjson": "^3.1.2",
