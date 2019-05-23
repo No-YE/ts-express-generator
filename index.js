@@ -40,7 +40,7 @@ const doUpdatePackage = () => {
   return new Promise((resolve) => {
     const package = JSON.parse(fs.readFileSync('./package.json').toString());
 
-    package.scripts.main = 'nodemon --watch src --delay 1 --exec ts-node src/bin/www.ts';
+    package.scripts.start = 'nodemon --watch src --delay 1 --exec ts-node src/bin/www.ts';
     package.scripts.test = 'mocha --require ts-node/register --exit ./test/*.spec.ts';
 
     fs.writeFileSync('./package.json', JSON.stringify(package, null, 2));
@@ -63,7 +63,7 @@ const doNpmInstall = () => {
 const doNpmInstallDev = () => {
   return new Promise((resolve, reject) => {
     const npmInstallDev = spawn(/^win/.test(process.platform) ? 'npm.cmd' : 'npm',
-      ['i', '-D', 'typescript', 'nodemon', 'mocha', '@types/express', '@types/dotenv']);
+      ['i', '-D', 'typescript', 'ts-node', 'nodemon', 'mocha', '@types/express', '@types/dotenv']);
 
     npmInstallDev.stdout.on('data', data => process.stdout.write(data.toString()));
     //npmInstallDev.stderr.on('data', data => reject(data.toString()));
