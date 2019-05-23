@@ -10,13 +10,22 @@
     "url": "git://github.com/No-YE/ts-express-generator.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "teg": "./index.js"
   },
   "files": [
     "index.js",
     "templates/"
+  ],
+  "keywords": [
+    "express",
+    "framework",
+    "typescript",
+    "generator",
+    "web",
+    "router",
+    "app"
   ],
   "dependencies": {
     "commander": "^2.20.0"
