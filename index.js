@@ -43,7 +43,7 @@ const doCopy = (appPath) => {
 const updatePacket = (appPath) => {
   const splitedPath = appPath.split('\\');
   const appName = splitedPath[splitedPath.length-1];
-  console.log(appPath);
+
   const package = JSON.parse(fs.readFileSync(path.join(appPath, 'package.json')).toString());
   
   package.name = appName;
