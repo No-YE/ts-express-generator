@@ -1,6 +1,7 @@
 import { createServer } from 'http';
 import app from '../app';
+import { port } from '../config';
 
-const PORT = process.env.PORT || 3000;
+const PORT = port || 3000;
 
 createServer(app).listen(PORT, () => console.log('start'));
