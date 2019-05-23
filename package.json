@@ -1,10 +1,9 @@
 {
   "name": "ts-express-generator",
-  "version": "0.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.4",
+  "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec --bail --check-leaks test/"
   },
   "repository": {
     "type": "git",
@@ -15,9 +14,19 @@
   "bin": {
     "teg": "./index.js"
   },
+  "files": [
+    "index.js",
+    "templates/"
+  ],
   "dependencies": {
     "commander": "^2.20.0",
     "hjson": "^3.1.2",
     "path": "^0.12.7"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/No-YE/ts-express-generator/issues"
+  },
+  "homepage": "https://github.com/No-YE/ts-express-generator#readme",
+  "devDependencies": {},
+  "description": ""
 }
